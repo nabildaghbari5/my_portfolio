@@ -1,0 +1,52 @@
+.cv-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+}
+
+.heading {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 14px;
+}
+
+.competence {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.competence:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+}
+
+.tech {
+    color: #2563eb;
+    font-weight: 600;
+    background: linear-gradient(120deg, #f0f7ff 0%, #e8f1ff 100%);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Consolas', monospace;
+    font-size: 0.95em;
+    letter-spacing: 0.3px;
+    border: 1px solid rgba(37, 99, 235, 0.1);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    margin: 0 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+.tech:hover {
+    background: linear-gradient(120deg, #e8f1ff 0%, #dce7fb 100%);
+    border-color: rgba(37, 99, 235, 0.2);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,85 @@
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex mb-3">
+            <div dropdown class="dropdown flex-shrink-0 ms-auto">
+                <button dropdownToggle class="btn btn-light btn-icon btn-sm" type="button">
+                    <i class="bi bi-share"></i>
+                </button>
+                <ul *bsDropdownMenu class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bi bi-facebook me-1 align-baseline"></i> Facebook</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bi bi-whatsapp me-1 align-baseline"></i> Whatsapp</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bi bi-instagram me-1 align-baseline"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="text-center border-bottom border-dashed pb-4">
+            <img src="assets/images/users/nabil.jpg" alt="" class="avatar-lg rounded-circle p-1 img-thumbnail">
+            <div class="mt-3">
+                <h5>Daghbari Nabil<i class="bi bi-patch-check-fill align-baseline text-info ms-1"></i></h5>
+                <p class="text-muted">Full-Stack Developer Java/Angular | DevOps</p>
+            </div>
+
+            <div class="d-flex gap-2 mt-4">
+                <button type="button" class="btn btn-subtle-secondary custom-toggle w-50" (click)="Followbtn($event)">
+                    <span class="icon-on"><i class="bi bi-person-plus align-baseline me-1"></i> {{'PROFIL.FOLLOWING' | translate}}</span>
+                    <span class="icon-off"><i class="bi bi-person-x align-baseline me-1"></i> {{'PROFIL.UNFOLOWINF' | translate}}</span>
+                </button>
+                <button type="button" class="btn btn-primary text-truncate w-50"><i class="bi bi-chat-left-text align-baseline me-1"></i> {{'PROFIL.CONTACT' | translate}}</button>
+            </div>
+        </div>
+
+        <div class="border-bottom border-dashed py-4">
+            <h5 class="card-title mb-3">Information</h5>
+            <div class="table-responsive">
+                <table class="table table-borderless table-sm align-middle mb-0">
+                    <tbody>
+
+                        <tr>
+                            <th class="ps-0" scope="row">{{ 'PROFIL.EMAIL' | translate }}</th>
+                            <td class="text-muted text-end">nabil.daghbari5&#64;gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th class="ps-0" scope="row">{{ 'PROFIL.PHONE_NO' | translate }}</th>
+                            <td class="text-muted text-end">+216 26 027 454</td>
+                        </tr>
+                        <tr>
+                            <th class="ps-0" scope="row">{{ 'PROFIL.LOCATION' | translate }}</th>
+                            <td class="text-muted text-end">Tunis, Tunisia</td>
+                        </tr>
+                        <tr>
+                            <th class="ps-0" scope="row">{{ 'PROFIL.BIRTH_DATE' | translate }}</th>
+                            <td class="text-muted text-end">20-12-1998</td>
+                        </tr>
+                        <tr>
+                            <th class="ps-0" scope="row">{{ 'PROFIL.AGE' | translate }}</th>
+                            <td class="text-muted text-end">26</td>
+                        </tr>
+                       
+                        <tr>
+                            <th class="ps-0" scope="row">{{ 'PROFIL.JOINING_DATE' | translate }}</th>
+                            <td class="text-muted text-end">30 Oct 2023</td>
+                        </tr>
+                        <tr>
+                            <th class="ps-0" scope="row">{{ 'PROFIL.SOCIAL_MEDIA' | translate }}</th>                        
+                            <td>
+                                <div class="d-flex flex-wrap justify-content-end gap-2">
+                                    <a href="https://wa.me/21626027454?text=Bonjour%2C%20j%27aimerais%20plus%20d%27informations." class="avatar-xs d-block" target="_blank">
+                                        <span class="avatar-title rounded-circle bg-success-subtle text-dark">
+                                            <i class="bi bi-whatsapp"></i>
+                                        </span>
+                                    </a>
+                                    <a href="https://www.facebook.com/profile.php?id=61555804331364" class="avatar-xs d-block" target="_blank">
+                                        <span class="avatar-title rounded-circle bg-primary-subtle text-primary">
+                                            <i class="bi bi-facebook"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div><!--end card-->

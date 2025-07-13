@@ -1,0 +1,95 @@
+{  
+  "TOPBAR": {
+   "FOLLOWING": "Suivis",
+   "VIEWS": "Vues",
+   "APPLICATION":"Parcourir par applications"
+},
+"PROFIL": {
+   "FOLLOWING": "Suivre",
+   "UNFOLOWINF": "Unfollow",
+   "CONTACT": "Contact",
+   "INFORMATION": "Informations",
+   "PHONE_NO": "Numéro de téléphone",
+   "BIRTH_DATE": "Date de naissance",
+   "EMAIL": "E-mail",
+   "LOCATION": "Localisation",
+   "JOINING_DATE": "Date d'adhésion",
+   "SOCIAL_MEDIA": "Réseaux sociaux" ,
+   "AGE": "Âge"
+},
+  "MENUITEMS": {
+    "ABOUTS":"À propos",
+    "EDUCATION":"Éducation",
+    "SKILLS":"Compétences Techniques" ,
+    "EXPERIENCE_PROFESTIONNELE":"Expérience professionnelle",
+    "PROJET":"Projets de Développement" ,
+    "CONTACT":"Contact"    
+  },
+  "HOMME": {
+  "Profile": "Profil",
+  "Media": "Galerie",
+  "About": "À propos de nous",
+  "FullStackDeveloper": "Développeur Full-Stack",
+  "SpecializedIn": "spécialisé en",
+  "Java": "Java",
+  "SpringBoot": "Spring Boot",
+  "Angular": "Angular",
+  "WebApplications": "applications web",
+  "Secure": "sécurisées",
+  "Scalable": "évolutives",
+  "HighPerformance": "performantes",
+  "OptimizingArchitectures": "l’optimisation des architectures logicielles",
+  "BestPractices": "les bonnes pratiques",
+  "DevOps": "DevOps",
+  "AutomatedDeployments": "déploiements automatisés",
+  "EfficientInfrastructure": "gestion efficace des infrastructures",
+  "DevelopmentCycle": "cycle de développement",
+  "RequirementsAnalysis": "l’analyse des besoins",
+  "ProductionDeployment": "mise en production",
+  "Quality": "qualité",
+  "Innovation": "innovation",
+
+  "Languages": "Langues",
+  "English": "Anglais",
+  "French": "Français",
+  "Arabic": "Arabe"
+}
+,
+  "EDUCATION": {
+    "HEAD":"Diplôme Académique",
+    "DESC_INGENIEUR": "J’ai entamé mon cycle d’ingénierie informatique avec une curiosité pour le développement et une volonté d’apprendre. Au fil de ma formation, j’ai acquis une solide expertise en génie logiciel, en maîtrisant les langages de programmation, les architectures logicielles et les bonnes pratiques de développement. Grâce à une approche alliant théorie et projets concrets, j’ai pu évoluer d’un débutant à un développeur capable de concevoir, optimiser et déployer des solutions performantes répondant aux exigences du monde professionnel.",
+    "TITRE_INGENIEUR":"Cycle d'ingénierie informatique – Génie logiciel",
+    "SCHOOL_INGENIEUR":"École Supérieure Privée d'Ingénierie et de Technologies" , 
+
+    "DESC_PREP":"Le cycle préparatoire est une formation exigeante qui permet d’acquérir de solides bases en sciences fondamentales, notamment en mathématiques et en physique. Il développe la rigueur, l’analyse et la résolution de problèmes, préparant efficacement aux études d’ingénierie et aux concours d’admission aux grandes écoles.",
+    "TITRE_PREP":"Cycle préparatoire en Mathématiques -  Physique",
+    "SCHOOL_PREP":"Faculté des Sciences de Sfax (FSS)" , 
+
+    "DESC_BAC":"Le Baccalauréat en Mathématiques est une formation axée sur l’acquisition de compétences avancées en mathématiques et en sciences physiques. Il développe la logique, l’analyse et la résolution de problèmes, offrant une base solide pour les études supérieures en ingénierie, sciences et technologies.",
+    "TITRE_BAC":"Baccalauréat en Mathématiques",
+    "SCHOOL_BAC":"Lycée Secondaire Ibn Charaf-Thala" 
+  },
+  "SKILLS":{
+    "TITRE_PAGE":"Compétences Techniques",
+    "HEAD":"Frameworks et Outils de Développement : Backend, Frontend, Data & DevOps"
+  },
+
+  "EXPERIENCE":{
+    "HEAD":"Parcours professionnel et expertise technique",
+    "DESC_BEWISE": "En tant que développeur Full-Stack et DevOps, j'interviens sur la conception, le développement back-end, l’implémentation front-end et l’automatisation des déploiements afin de livrer des solutions complètes, performantes et optimisées.",
+    "TITRE_BEWISE":"Développeur Full-Stack (Java/Angular) & Ingénierie DevOps",
+    "SOCIETE_BEWISE":"BeWise" ,  
+
+
+    "DESC_SBI": "RecrutiWeb : Une application Web innovante pour simplifier le recrutement et la gestion des contrats.",
+    "TITRE_SBI":"Développeur Full-Stack (Java/Angular) & Ingénierie DevOps",
+    "SOCIETE_SBI":"BeWise",  
+
+    "DESC_ATI": "Application web de gestion de dossiers avec signature électroniqueet et gestion des QR codes.",
+    "TITRE_ATI":"Développeur Full-Stack (Java/Angular) & Ingénierie DevOps"
+  } , 
+  "PROJECT":{
+     "HEAD":"Création de solutions innovantes, adaptées aux besoins spécifiques de chaque projet."
+     
+  }
+}

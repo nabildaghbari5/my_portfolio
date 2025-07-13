@@ -1,0 +1,45 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/portfolio
+    username: postgres
+    password: root
+    name: portfolio
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: nabil.daghbari15@gmail.com  # Utiliser votre adresse Gmail
+    password: yfod ujgi jjfi kftw  # Mot de passe de l'adresse Gmail (ou un mot de passe d'application si nécessaire)
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+application:
+  security:
+    jwt:
+      secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+      expiration: 86400000 # a day
+      refresh-token:
+        expiration: 604800000 # 7 days
+  mailing:
+    frontend:
+      activation-url: http://localhost:4200/account/auth/activate-account
+      resetPassword-url: http://localhost:4200/account/auth/pass-change
+  file:
+    uploads:
+      photos-output-path: ./uploads  # Chemin relatif pour stocker les fichiers locaux

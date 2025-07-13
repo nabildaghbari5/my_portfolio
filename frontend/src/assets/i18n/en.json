@@ -1,0 +1,86 @@
+{ 
+  "TOPBAR":{
+   "FOLLOWING":"Following",
+   "VIEUX" :"Views",
+   "APPLICATION":"Browse by Apps"
+},
+ "PROFIL": {
+   "FOLLOWING": "Follow",
+   "UNFOLOWINF": "Unfollow",
+   "CONTACT": "Contact",
+   "INFORMATION": "Information",
+   "DESIGNATION": "Designation",
+   "PHONE_NO": "Phone Number",
+   "BIRTH_DATE": "Birth Date",
+   "EMAIL": "E-mail",
+   "LOCATION": "Location",
+   "JOINING_DATE": "Joining Date",
+   "SOCIAL_MEDIA": "Social Media",
+   "AGE": "Age"
+  },
+
+  "MENUITEMS": {
+
+    "ABOUTS":"About",
+    "EDUCATION":"Education" ,
+    "SKILLS":"Technical Skills" ,
+    "EXPERIENCE_PROFESTIONNELE":"Professional Experience",
+    "PROJET":"Development Projects" ,
+    "CONTACT":"Contact"    
+  } , 
+"HOMME": {
+  "Profile": "Profile",
+  "Media": "Gallery",
+  "About": "About Us",
+  "FullStackDeveloper": "Full-Stack Developer",
+  "SpecializedIn": "specializing in",
+  "Java": "Java",
+  "SpringBoot": "Spring Boot",
+  "Angular": "Angular",
+  "WebApplications": "web applications",
+  "Secure": "secure",
+  "Scalable": "scalable",
+  "HighPerformance": "high-performance",
+  "OptimizingArchitectures": "optimizing software architectures",
+  "BestPractices": "best development practices",
+  "DevOps": "DevOps",
+  "AutomatedDeployments": "automated deployments",
+  "EfficientInfrastructure": "efficient infrastructure management",
+  "DevelopmentCycle": "development cycle",
+  "RequirementsAnalysis": "requirements analysis",
+  "ProductionDeployment": "production deployment",
+  "Quality": "quality",
+  "Innovation": "innovation",
+  "Languages": "Languages",
+  "English": "English",
+  "French": "French",
+  "Arabic": "Arabic"
+},
+  "EDUCATION" :{
+    "HEAD":"Educational Qualification",
+    "DESC_INGENIEUR":"I began my computer engineering program with a curiosity for development and a strong desire to learn.Throughout my training, I acquired solid expertise in software engineering, mastering programming languages, software architectures,and development best practices. Through an approach combining theory and hands-on projects, I evolved from a beginner to a developer capable of designing, optimizing, and deploying high-performance solutions that meet professional requirements.",
+    "TITRE_INGENIEUR":"Computer Engineering Cycle – Software Engineering",
+    "SCHOOL_INGENIEUR":"Private Higher School of Engineering and Technologies" ,
+
+    "DESC_PREP":"The preparatory cycle is a rigorous program that provides a strong foundation in fundamental sciences, particularly in mathematics and physics. It develops analytical skills, problem-solving abilities, and discipline, effectively preparing students for engineering studies and entrance exams to prestigious schools.",
+    "TITRE_PREP":"Preparatory Cycle in Mathematics - Physics",
+    "SCHOOL_PREP":"Faculty of Sciences of Sfax (FSS)",
+
+    "DESC_BAC":"The Mathematics Baccalaureate is a program focused on developing advanced skills in mathematics and physical sciences. It enhances logical reasoning, analytical thinking, and problem-solving abilities, providing a strong foundation for higher studies in engineering, science, and technology.",
+    "TITRE_BAC":"Mathematics Baccalaureate",
+    "SCHOOL_BAC":"Ibn Charaf Secondary School-Thala" 
+  } ,  
+  
+  "SKILLS":{
+    "TITRE_PAGE":"Technical Skills" ,
+    "HEAD":"Development Frameworks and Tools: Backend, Frontend, Data & DevOps"
+  },
+
+  "EXPERIENCE":{
+    "HEAD":"Professional Journey and Technical Expertise"
+  } , 
+  "PROJECT":{
+     "HEAD":"Creating innovative solutions tailored to the specific needs of each project"
+     
+  }
+}  

@@ -1,0 +1,92 @@
+<!-- Start Breadcrumbs -->
+<app-breadcrumbs [title]="'HOMME.Profile' | translate"></app-breadcrumbs>
+<!-- End Breadcrumbs -->
+
+<div class="row">
+    <div class="col-xl-3">
+     <app-profile></app-profile>
+    </div><!--end col-->
+
+    <div class="col-xl-9 position-relative ">
+        
+        <div class="tab-pane active" id="overview-tab">
+            <div class="card">
+                <div class="card-body">
+                    <div class="mb-4">
+                        <h5 class="card-title mb-4 text-primary border-bottom pb-2">
+                            <i class="bi bi-stars me-2"></i>{{ 'HOMME.Media' | translate }}
+                        </h5>
+                        <div class="row profile-media g-3">
+                            <div class="col-lg-5">
+                                <img src="assets/images/media/html.png" alt="" class="img-fluid h-100 rounded  ">
+                            </div><!--end col-->
+                            <div class="col-lg-5">
+                                <img src="assets/images/media/JS.png" alt="" class="img-fluid h-100 rounded  ">
+                            </div><!--end col-->
+                            <div class="col-lg-2">
+                                <div class="row g-3">
+                                    <div class="col-lg-12">
+                                        <img src="assets/images/media/code.jpg" alt="" class="img-fluid h-100 rounded  ">
+                                    </div><!--end-col-->
+                                    <div class="col-lg-12">
+                                        <img src="assets/images/media/moi.jpeg" alt="" class="img-fluid h-100 rounded  ">
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </div><!--end col-->
+                        </div><!--end row-->
+
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="card-title mb-4 text-primary border-bottom pb-2">
+                            <i class="bi bi-stars me-2"></i>{{ 'HOMME.About' | translate }}
+                        </h5>
+                        <p class="text-muted mb-2">
+                            <span class="tech">{{ 'HOMME.FullStackDeveloper' | translate }}</span>
+                            {{ 'HOMME.SpecializedIn' | translate }}
+                            <span class="tech">{{ 'HOMME.Java' | translate }}</span>,
+                            <span class="tech">{{ 'HOMME.SpringBoot' | translate }}</span> 
+                            et <span class="tech">{{ 'HOMME.Angular' | translate }}</span>,
+                            je conçois et développe des 
+                            <span class="tech">{{ 'HOMME.WebApplications' | translate }}</span>  
+                            <span class="tech">{{ 'HOMME.HighPerformance' | translate }}</span>, 
+                            <span class="tech">{{ 'HOMME.Secure' | translate }}</span> et 
+                            <span class="tech">{{ 'HOMME.Scalable' | translate }}</span>.
+                        </p>
+                        <p class="text-muted mb-2">
+                            Passionné par <span class="tech">{{ 'HOMME.OptimizingArchitectures' | translate }}</span>, 
+                            j’intègre <span class="tech">{{ 'HOMME.BestPractices' | translate }}</span> de développement et 
+                            de <span class="tech">{{ 'HOMME.DevOps' | translate }}</span>  
+                            pour assurer des <span class="tech">{{ 'HOMME.AutomatedDeployments' | translate }}</span>  
+                            et une <span class="tech">{{ 'HOMME.EfficientInfrastructure' | translate }}</span>.
+                        </p>
+                        <p class="text-muted mb-0">
+                            Mon expertise couvre l’ensemble du 
+                            <span class="tech">{{ 'HOMME.DevelopmentCycle' | translate }}</span>,  
+                            de <span class="tech">{{ 'HOMME.RequirementsAnalysis' | translate }}</span>  
+                            à la <span class="tech">{{ 'HOMME.ProductionDeployment' | translate }}</span>,  
+                            avec un souci constant de <span class="tech">{{ 'HOMME.Quality' | translate }}</span>  
+                            et <span class="tech">{{ 'HOMME.Innovation' | translate }}</span>.
+                        </p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 class="card-title mb-3">{{ 'HOMME.Languages' | translate }}</h5>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-primary-subtle text-primary">{{ 'HOMME.English' | translate }}</span>
+                                    <span class="badge bg-primary-subtle text-primary">{{ 'HOMME.French' | translate }}</span>
+                                    <span class="badge bg-primary-subtle text-primary">{{ 'HOMME.Arabic' | translate }}</span>
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div>
+                   
+                </div>
+                <!--end card-body-->
+            </div><!-- end card -->
+        </div>
+    </div><!--end col-->
+</div><!--end row-->

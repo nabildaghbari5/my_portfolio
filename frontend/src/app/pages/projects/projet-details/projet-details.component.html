@@ -1,0 +1,164 @@
+<app-breadcrumbs title="EXPERIENCE"></app-breadcrumbs>
+
+<!-- Container principal avec fond dégradé -->
+<div class="project-details-container" *ngIf="project">
+    <div class="row">
+        <div class="col-xl-12 position-relative">
+
+            <!-- En-tête du projet optimisé -->
+            <div class="project-header-card animate-fade-in">
+                <div class="header-content">
+                    <div class="title-section">
+                        <h1 class="project-title-gradient">{{ project?.title }}</h1>
+                        <p class="project-description">{{ project?.detailedDescription }}</p>
+                    </div>
+                    <button type="button" class="favorite-btn" [class.active]="isFavorite" (click)="toggleFavorite()">
+                        <i class="bi" [class.bi-star]="!isFavorite" [class.bi-star-fill]="isFavorite"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Section galerie améliorée -->
+            <div class="gallery-section animate-fade-in">
+                <div class="gallery-card">
+                    <h5 class="card-title mb-4 text-primary border-bottom pb-2">
+                        <i class="bi bi-stars me-2"></i>{{ 'PROJECT.HEAD' | translate }}
+                    </h5>
+
+                    <div class="gallery-container">
+                        <gallery id="advancedGallery" [items]="images" [thumbImageSize]="'contain'"
+                            [thumbPosition]="'bottom'" [nav]="true" thumbs [bullets]="true" [bulletSize]="10"
+                            [loop]="true" [autoplay]="isAutoplay" [autoplayInterval]="3000" [disableScroll]="true"
+                            [loadingAttr]="'lazy'" [loadingStrategy]="'preload'" [counter]="true">
+                        </gallery>
+
+                        <!-- Contrôles personnalisés -->
+                        <div class="gallery-controls">
+                            <button class="control-btn" (click)="toggleAutoplay()">
+                                <i class="bi" [class.bi-pause]="isAutoplay" [class.bi-play]="!isAutoplay"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <!-- Layout horizontal : Détails + Sidebar -->
+            <div class="row">
+                <!-- Section détails avec onglets - 8 colonnes -->
+                <div class="col-lg-9 col-md-12">
+                    <div class="details-section animate-fade-in">
+                        <div class="details-card">
+                            <!-- En-tête des onglets -->
+                            <div class="tabs-header">
+                                <button class="tab-btn" [class.active]="activeTab === 'objectives'"
+                                    (click)="setActiveTab('objectives')">
+                                    <i class="bi bi-bullseye me-2"></i>
+                                    Objectifs
+                                </button>
+                                <button class="tab-btn" [class.active]="activeTab === 'features'"
+                                    (click)="setActiveTab('features')">
+                                    <i class="bi bi-puzzle me-2"></i>
+                                    Fonctionnalités
+                                </button>
+                                <button class="tab-btn" [class.active]="activeTab === 'challenges'"
+                                    (click)="setActiveTab('challenges')">
+                                    <i class="bi bi-exclamation-triangle me-2"></i>
+                                    Défis
+                                </button>
+                            </div>
+
+                            <!-- Contenu des onglets -->
+                            <div class="tab-content">
+
+                                <!-- Onglet Objectifs -->
+                                <div *ngIf="activeTab === 'objectives' && project?.objectives?.length"
+                                    class="tab-panel animate-slide-in">
+                                    <h3 class="section-title objectives">🎯 Objectifs du projet</h3>
+                                    <div class="items-grid">
+                                        <div *ngFor="let objective of project.objectives; let i = index"
+                                            class="item-card objectives" [style.animation-delay.ms]="i * 100">
+                                            <div class="item-indicator"></div>
+                                            <p>{{ objective }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Onglet Fonctionnalités -->
+                                <div *ngIf="activeTab === 'features' && project?.features?.length"
+                                    class="tab-panel animate-slide-in">
+                                    <h3 class="section-title features">🧩 Fonctionnalités principales</h3>
+                                    <div class="items-grid">
+                                        <div *ngFor="let feature of project.features; let i = index"
+                                            class="item-card features" [style.animation-delay.ms]="i * 100">
+                                            <div class="item-indicator"></div>
+                                            <p>{{ feature }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Onglet Défis -->
+                                <div *ngIf="activeTab === 'challenges' && project?.challenges?.length"
+                                    class="tab-panel animate-slide-in">
+                                    <h3 class="section-title challenges">🚧 Défis rencontrés</h3>
+                                    <div class="items-grid">
+                                        <div *ngFor="let challenge of project.challenges; let i = index"
+                                            class="item-card challenges" [style.animation-delay.ms]="i * 100">
+                                            <div class="item-indicator"></div>
+                                            <p>{{ challenge }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Message si aucun contenu -->
+                                <div *ngIf="!hasContentForActiveTab()" class="no-content">
+                                    <i class="bi bi-info-circle me-2"></i>
+                                    Aucun contenu disponible pour cette section.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar avec actions et technologies - 4 colonnes -->
+                <div class="col-lg-3 col-md-12">
+                    <div class="sidebar-section">
+                        <!-- Technologies avec badges améliorés -->
+                        <div class="tech-card animate-fade-in" *ngIf="project?.technologies?.length">
+                            <div class="card-header">
+                                <h5><i class="bi bi-tools me-2"></i>Technologies utilisées</h5>
+                            </div>
+                            <div class="card-content">
+                                <div class="tech-badges-modern">
+                                    <span *ngFor="let tech of project.technologies; let i = index"
+                                        class="tech-badge-modern" [style.animation-delay.ms]="i * 100">
+                                        {{ tech }}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Actions rapides -->
+                        <div class="actions-card animate-fade-in">
+                            <div class="card-header">
+                                <h5><i class="bi bi-lightning-charge me-2"></i>Actions rapides</h5>
+                            </div>
+                            <div class="card-content">
+                                <a *ngIf="project?.linkDemo" [href]="project.linkDemo" class="action-btn primary"
+                                    target="_blank">
+                                    <i class="fas fa-external-link-alt me-2"></i>
+                                    Voir la démo en direct
+                                </a>
+                                <a *ngIf="project?.linkCode" [href]="project.linkCode" class="action-btn secondary"
+                                    target="_blank">
+                                    <i class="fab fa-github me-2"></i>
+                                    Voir le code source
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

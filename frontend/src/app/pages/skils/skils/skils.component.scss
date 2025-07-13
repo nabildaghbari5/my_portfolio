@@ -1,0 +1,70 @@
+.skill-category {
+    transition: transform 0.2s ease-in-out;
+    background: linear-gradient(145deg, #f8f9fa 0%, #ffffff 100%);
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        color: #2c3e50;
+    }
+}
+
+.skill-items {
+    display: grid;
+    gap: 1rem;
+}
+
+.skill-item {
+    transition: all 0.2s ease-in-out;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 3px;
+        background: currentColor;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    &:hover {
+        transform: translateX(5px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+        &::before {
+            opacity: 1;
+        }
+    }
+
+    i {
+        min-width: 24px;
+    }
+
+    span {
+        color: #2c3e50;
+    }
+}
+
+// Couleurs personnalisées
+.text-orange {
+    color: #fd7e14;
+}
+
+.text-purple {
+    color: #6f42c1;
+}
+
+// Media queries pour assurer la responsivité
+@media (max-width: 768px) {
+    .skill-category {
+        margin-bottom: 1rem;
+    }
+}

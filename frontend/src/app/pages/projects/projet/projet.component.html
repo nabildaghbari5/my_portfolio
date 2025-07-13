@@ -1,0 +1,87 @@
+<!-- Start Breadcrumbs -->
+<app-breadcrumbs title="EXPERIENCE" ></app-breadcrumbs>
+<!-- End Breadcrumbs -->
+
+<div class="row">
+    <div class="col-xl-3">
+        <app-profile></app-profile> 
+    </div><!--end col-->
+
+    <div class="col-xl-9 position-relative ">
+        <div class="row align-items-center mt-4 mt-sm-0 pt-2 pt-sm-0 mb-3">
+            <div class="col-md">
+                <!-- Nav tabs -->
+                <div class="tab-pane active" id="overview-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4 text-primary border-bottom pb-2">
+                                <i class="bi bi-stars me-2"></i>{{ 'PROJECT.HEAD' | translate }}
+                            </h5>
+                            <div class="category-filters">
+                              <button *ngFor="let category of categories" 
+                                      [class.active]="selectedCategory === category"
+                                      (click)="filterProjects(category)"
+                                      class="filter-btn">
+                                {{ category }}
+                              </button>
+                            </div>
+                                <ul class="acitivity-timeline-2 list-unstyled mb-0">
+                                  <!-- portfolio.component.html -->
+                                <div class="portfolio-container">
+                                  <div class="swiper pagination-dynamic-swiper rounded">
+                                    <div class="swiper pagination-dynamic-swiper rounded">
+                                        <ngx-slick-carousel class="carousel" >
+                                           
+                                        </ngx-slick-carousel>
+                                      </div>
+                                </div>
+                                  <div class="projects-grid">
+                                    <div *ngFor="let project of currentProjects" 
+                                        class="project-card" 
+                                        [@cardAnimation]="'final'"
+                                        (mouseenter)="toggleProjectDetails(project.id)"
+                                        (mouseleave)="toggleProjectDetails(project.id)">
+                                      
+                                      <div class="project-image-container" (click)="detaileProject(project.id)">
+                                        <img [src]="project.image[0]" [alt]="project.title">
+                                        <div class="project-overlay" 
+                                            [@detailsAnimation]="isHovered[project.id] ? 'visible' : 'hidden'">
+                                          <div class="overlay-content">
+                                            <i class="fas fa-eye"></i>
+                                            <p>{{project.detailedDescription}}</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                
+                                      <div class="project-content">
+                                        <h2>{{project.title}}</h2>
+                                        <p>{{project.description}}</p>
+                                        
+                                       
+                                        <div class="project-links">
+                                          <a class="btn details-btn" (click)="detaileProject(project.id)">
+                                            <i class="fas fa-info-circle"></i> Détails
+                                          </a>
+                                          <a class="btn demo-btn" [href]="project.linkDemo" target="_blank" [class.disabled]="!project.isDemo">
+                                            <i class="fas fa-external-link-alt"></i> Démo
+                                          </a>
+                                           <a class="btn github-btn" [href]="project.githubLink" target="_blank" [class.disabled]="project.isCode">
+                                            <i class="fab fa-github"></i> Code
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                </ul>
+                        </div>
+                        <!--end card-body-->
+                    </div><!-- end card -->
+                </div>
+            </div><!--end col-->
+
+        </div><!--end row-->
+    </div><!--end col-->
+</div><!--end row-->
+
+
